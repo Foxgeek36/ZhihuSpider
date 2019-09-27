@@ -15,7 +15,7 @@
 利用知乎api获得相应的内容，其中回答、文章的的主体内容是以html标签的形式包含在api返回的内容中。提取主体内容，将这部分内容解析转换成markdown文件保存到本地
 
 ## 启动方式
-GrandConcourse.py是脚本的启动入口。以知乎的问题“[你见过哪些惊艳的句子？](https://www.zhihu.com/question/320078376)”为例。该问题的链接为：https://www.zhihu.com/question/320078376 ，末尾的“320078376”就是该问题唯一的id，将其粘贴到GrandConcourse.py下的“question_id”下即可启动爬取该问题下的优质答案，即`question_id = '320078376'。
+GrandConcourse.py是脚本的启动入口。以知乎的问题“[你见过哪些惊艳的句子？](https://www.zhihu.com/question/320078376)”为例。该问题的链接为：https://www.zhihu.com/question/320078376 ，末尾的“320078376”就是该问题唯一的id，将其粘贴到GrandConcourse.py下的“question_id”下即可启动爬取该问题下的优质答案，即`question_id = '320078376'`。
 
 ## 写在最后
 
