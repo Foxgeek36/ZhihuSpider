@@ -1,0 +1,192 @@
+{
+  "id": 66900790,
+  "title": "[LeetCode] 64. 最小路径和",
+  "type": "article",
+  "excerpt_title": "",
+  "url": "https://api.zhihu.com/articles/66900790",
+  "image_url": "https://pic2.zhimg.com/v2-67884d8a1020d53d82736b030e1d6b1d_b.jpg",
+  "title_image": "https://pic2.zhimg.com/v2-67884d8a1020d53d82736b030e1d6b1d_b.jpg",
+  "excerpt": "\u003cimg src=\"https://pic3.zhimg.com/v2-dc7c566bc2770d8ee6873a1e87b1a022_200x112.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"640\" data-rawheight=\"640\" data-watermark=\"original\" data-original-src=\"v2-dc7c566bc2770d8ee6873a1e87b1a022\" data-watermark-src=\"v2-c63736c944e69dc2879a895ed1c71ac8\" data-private-watermark-src=\"\" class=\"origin_image inline-img zh-lightbox-thumb\" data-original=\"https://pic3.zhimg.com/v2-dc7c566bc2770d8ee6873a1e87b1a022_r.jpg\"/\u003e题目链接 : \u003ca href=\"https://leetcode-cn.com/problems/minimum-path-sum/\"\u003ehttps://leetcode-cn.com/problems/minimum-path-sum/\u003c/a\u003e题目描述:给定一个包含非负整数的 \u003ci\u003em\u003c/i\u003e x \u003ci\u003en\u003c/i\u003e 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。\u003cb\u003e说明：\u003c/b\u003e每次只能向下或者向右移动一步。示例:输入:\n[\n [1,3,1],\n [1,5,1],\n [4,2,1]\n]\n输出: 7\n解释: 因为路…",
+  "created": 1558691898,
+  "updated": 1558691898,
+  "author": {
+    "is_followed": false,
+    "avatar_url_template": "https://pic3.zhimg.com/v2-22966db903d9f808e8f2e8042b6c619b_{size}.jpg",
+    "uid": "869614084004384768",
+    "user_type": "people",
+    "is_following": false,
+    "url_token": "cai-wei-30-64",
+    "id": "745cade48f041cfa5d8305af414cec4e",
+    "description": "世界未亡 死不投降",
+    "name": "九四干",
+    "is_advertiser": false,
+    "headline": "计算机",
+    "gender": 1,
+    "url": "https://api.zhihu.com/people/745cade48f041cfa5d8305af414cec4e",
+    "avatar_url": "https://pic3.zhimg.com/v2-22966db903d9f808e8f2e8042b6c619b_l.jpg",
+    "is_org": false,
+    "type": "people",
+    "vip_info": {
+      "is_vip": true,
+      "vip_icon": {
+        "url": "https://pic2.zhimg.com/v2-034fefe15c83232cb448718998719d34_r.png",
+        "night_mode_url": "https://pic3.zhimg.com/v2-c9686ff064ea3579730756ac6c289978_r.png"
+      }
+    },
+    "badge": [
+      {
+        "type": "identity",
+        "topics": [],
+        "description": "南京邮电大学 软件工程硕士在读"
+      }
+    ],
+    "exposed_medal": {
+      "medal_id": "972477022068568064",
+      "medal_name": "备受瞩目",
+      "avatar_url": "https://pic1.zhimg.com/v2-56635eff4121dfc06cf271f46fd700d4_r.png",
+      "mini_avatar_url": "https://pic1.zhimg.com/v2-d1adfc6e446f0712d968ba64cf567370_is.png",
+      "description": "被 100 个人关注"
+    }
+  },
+  "comment_permission": "all",
+  "state": "published",
+  "image_width": 873,
+  "image_height": 278,
+  "content": "\u003cp\u003e题目链接 : \u003ca href=\"https://link.zhihu.com/?target=https%3A//leetcode-cn.com/problems/minimum-path-sum/\" class=\" external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e\u003cspan class=\"invisible\"\u003ehttps://\u003c/span\u003e\u003cspan class=\"visible\"\u003eleetcode-cn.com/problem\u003c/span\u003e\u003cspan class=\"invisible\"\u003es/minimum-path-sum/\u003c/span\u003e\u003cspan class=\"ellipsis\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003ch2\u003e题目描述:\u003c/h2\u003e\u003cp\u003e给定一个包含非负整数的 \u003ci\u003em\u003c/i\u003e x \u003ci\u003en\u003c/i\u003e 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。\u003c/p\u003e\u003cp\u003e\u003cb\u003e说明：\u003c/b\u003e每次只能向下或者向右移动一步。\u003c/p\u003e\u003ch2\u003e示例:\u003c/h2\u003e\u003cdiv class=\"highlight\"\u003e\u003cpre\u003e\u003ccode class=\"language-text\"\u003e输入:\n[\n  [1,3,1],\n  [1,5,1],\n  [4,2,1]\n]\n输出: 7\n解释: 因为路径 1→3→1→1→1 的总和最小。\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003ch2\u003e思路:\u003c/h2\u003e\u003cp\u003e与\u003ca href=\"https://link.zhihu.com/?target=https%3A//leetcode-cn.com/problems/unique-paths/\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e62. 不同路径\u003c/a\u003e,\u003ca href=\"https://link.zhihu.com/?target=https%3A//leetcode-cn.com/problems/unique-paths-ii/\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e63. 不同路径 II\u003c/a\u003e是一类的题型.\u003c/p\u003e\u003cp\u003e动态规划,用\u003ccode\u003edp[i][j]\u003c/code\u003e表示到\u003ccode\u003ei,j\u003c/code\u003e的最小路径和.\u003c/p\u003e\u003cp\u003e动态方程: \u003ccode\u003edp[i][j] = min(dp[i-1][j], dp[i][j-1]) + grid[i][j]\u003c/code\u003e\u003c/p\u003e\u003cp\u003e注意这里的第一行,和第一列要单独考虑,\u003c/p\u003e\u003cp\u003e还有可以直接在\u003ccode\u003egrid\u003c/code\u003e上操作,优化空间!\u003c/p\u003e\u003cp\u003e再附上自顶向下动态规划, 大家可以附上 \u003ccode\u003eJava\u003c/code\u003e 代码吗?\u003c/p\u003e\u003ch2\u003e代码:\u003c/h2\u003e\u003cp\u003e自底向上\u003c/p\u003e\u003cdiv class=\"highlight\"\u003e\u003cpre\u003e\u003ccode class=\"language-python\"\u003e\u003cspan class=\"k\"\u003eclass\u003c/span\u003e \u003cspan class=\"nc\"\u003eSolution\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\n    \u003cspan class=\"k\"\u003edef\u003c/span\u003e \u003cspan class=\"nf\"\u003eminPathSum\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"bp\"\u003eself\u003c/span\u003e\u003cspan class=\"p\"\u003e,\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e \u003cspan class=\"n\"\u003eList\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003eList\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"nb\"\u003eint\u003c/span\u003e\u003cspan class=\"p\"\u003e]])\u003c/span\u003e \u003cspan class=\"o\"\u003e-\u0026gt;\u003c/span\u003e \u003cspan class=\"nb\"\u003eint\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\n        \u003cspan class=\"k\"\u003eif\u003c/span\u003e \u003cspan class=\"ow\"\u003enot\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e \u003cspan class=\"k\"\u003ereturn\u003c/span\u003e \u003cspan class=\"mi\"\u003e0\u003c/span\u003e\n        \u003cspan class=\"n\"\u003erow\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"nb\"\u003elen\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e)\u003c/span\u003e\n        \u003cspan class=\"n\"\u003ecol\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"nb\"\u003elen\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e])\u003c/span\u003e\n        \u003cspan class=\"n\"\u003edp\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"p\"\u003e[[\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e\u003cspan class=\"o\"\u003e*\u003c/span\u003e\u003cspan class=\"n\"\u003ecol\u003c/span\u003e \u003cspan class=\"k\"\u003efor\u003c/span\u003e \u003cspan class=\"n\"\u003e_\u003c/span\u003e \u003cspan class=\"ow\"\u003ein\u003c/span\u003e \u003cspan class=\"nb\"\u003erange\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003erow\u003c/span\u003e\u003cspan class=\"p\"\u003e)]\u003c/span\u003e\n        \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e\n        \u003cspan class=\"c1\"\u003e# 第一行\u003c/span\u003e\n        \u003cspan class=\"k\"\u003efor\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e \u003cspan class=\"ow\"\u003ein\u003c/span\u003e \u003cspan class=\"nb\"\u003erange\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e,\u003c/span\u003e \u003cspan class=\"n\"\u003ecol\u003c/span\u003e\u003cspan class=\"p\"\u003e):\u003c/span\u003e\n            \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"o\"\u003e-\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e+\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e\n        \u003cspan class=\"c1\"\u003e# 第一列\u003c/span\u003e\n        \u003cspan class=\"k\"\u003efor\u003c/span\u003e \u003cspan class=\"n\"\u003ei\u003c/span\u003e \u003cspan class=\"ow\"\u003ein\u003c/span\u003e \u003cspan class=\"nb\"\u003erange\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e,\u003c/span\u003e \u003cspan class=\"n\"\u003erow\u003c/span\u003e\u003cspan class=\"p\"\u003e):\u003c/span\u003e\n            \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"o\"\u003e-\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e+\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e\n\n        \u003cspan class=\"k\"\u003efor\u003c/span\u003e \u003cspan class=\"n\"\u003ei\u003c/span\u003e \u003cspan class=\"ow\"\u003ein\u003c/span\u003e \u003cspan class=\"nb\"\u003erange\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e,\u003c/span\u003e \u003cspan class=\"n\"\u003erow\u003c/span\u003e\u003cspan class=\"p\"\u003e):\u003c/span\u003e\n            \u003cspan class=\"k\"\u003efor\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e \u003cspan class=\"ow\"\u003ein\u003c/span\u003e \u003cspan class=\"nb\"\u003erange\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e,\u003c/span\u003e \u003cspan class=\"n\"\u003ecol\u003c/span\u003e\u003cspan class=\"p\"\u003e):\u003c/span\u003e\n                \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"nb\"\u003emin\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"o\"\u003e-\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"p\"\u003e],\u003c/span\u003e \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"o\"\u003e-\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e])\u003c/span\u003e \u003cspan class=\"o\"\u003e+\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e\n        \u003cspan class=\"k\"\u003ereturn\u003c/span\u003e \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"o\"\u003e-\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"o\"\u003e-\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003ejava\u003c/p\u003e\u003cdiv class=\"highlight\"\u003e\u003cpre\u003e\u003ccode class=\"language-java\"\u003e\u003cspan class=\"kd\"\u003eclass\u003c/span\u003e \u003cspan class=\"nc\"\u003eSolution\u003c/span\u003e \u003cspan class=\"o\"\u003e{\u003c/span\u003e\n    \u003cspan class=\"kd\"\u003epublic\u003c/span\u003e \u003cspan class=\"kt\"\u003eint\u003c/span\u003e \u003cspan class=\"nf\"\u003eminPathSum\u003c/span\u003e\u003cspan class=\"o\"\u003e(\u003c/span\u003e\u003cspan class=\"kt\"\u003eint\u003c/span\u003e\u003cspan class=\"o\"\u003e[][]\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"o\"\u003e)\u003c/span\u003e \u003cspan class=\"o\"\u003e{\u003c/span\u003e\n        \u003cspan class=\"k\"\u003eif\u003c/span\u003e \u003cspan class=\"o\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003egrid\u003c/span\u003e \u003cspan class=\"o\"\u003e==\u003c/span\u003e \u003cspan class=\"kc\"\u003enull\u003c/span\u003e\u003cspan class=\"o\"\u003e)\u003c/span\u003e \u003cspan class=\"k\"\u003ereturn\u003c/span\u003e \u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e;\u003c/span\u003e\n        \u003cspan class=\"kt\"\u003eint\u003c/span\u003e \u003cspan class=\"n\"\u003erow\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"o\"\u003e.\u003c/span\u003e\u003cspan class=\"na\"\u003elength\u003c/span\u003e\u003cspan class=\"o\"\u003e;\u003c/span\u003e\n        \u003cspan class=\"kt\"\u003eint\u003c/span\u003e \u003cspan class=\"n\"\u003ecol\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e].\u003c/span\u003e\u003cspan class=\"na\"\u003elength\u003c/span\u003e\u003cspan class=\"o\"\u003e;\u003c/span\u003e\n        \u003cspan class=\"kt\"\u003eint\u003c/span\u003e\u003cspan class=\"o\"\u003e[][]\u003c/span\u003e \u003cspan class=\"n\"\u003edp\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"k\"\u003enew\u003c/span\u003e \u003cspan class=\"kt\"\u003eint\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003erow\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ecol\u003c/span\u003e\u003cspan class=\"o\"\u003e];\u003c/span\u003e\n        \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e];\u003c/span\u003e\n        \u003cspan class=\"c1\"\u003e// 第一行\n\u003c/span\u003e\u003cspan class=\"c1\"\u003e\u003c/span\u003e        \u003cspan class=\"k\"\u003efor\u003c/span\u003e \u003cspan class=\"o\"\u003e(\u003c/span\u003e\u003cspan class=\"kt\"\u003eint\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003e1\u003c/span\u003e\u003cspan class=\"o\"\u003e;\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e \u003cspan class=\"o\"\u003e\u0026lt;\u003c/span\u003e \u003cspan class=\"n\"\u003ecol\u003c/span\u003e\u003cspan class=\"o\"\u003e;\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"o\"\u003e++)\u003c/span\u003e \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"o\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e \u003cspan class=\"o\"\u003e-\u003c/span\u003e \u003cspan class=\"n\"\u003e1\u003c/span\u003e\u003cspan class=\"o\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e+\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"o\"\u003e];\u003c/span\u003e\n        \u003cspan class=\"c1\"\u003e// 第一列\n\u003c/span\u003e\u003cspan class=\"c1\"\u003e\u003c/span\u003e        \u003cspan class=\"k\"\u003efor\u003c/span\u003e \u003cspan class=\"o\"\u003e(\u003c/span\u003e\u003cspan class=\"kt\"\u003eint\u003c/span\u003e \u003cspan class=\"n\"\u003ei\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003e1\u003c/span\u003e\u003cspan class=\"o\"\u003e;\u003c/span\u003e \u003cspan class=\"n\"\u003ei\u003c/span\u003e \u003cspan class=\"o\"\u003e\u0026lt;\u003c/span\u003e \u003cspan class=\"n\"\u003erow\u003c/span\u003e\u003cspan class=\"o\"\u003e;\u003c/span\u003e \u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"o\"\u003e++)\u003c/span\u003e \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e \u003cspan class=\"o\"\u003e-\u003c/span\u003e \u003cspan class=\"n\"\u003e1\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e+\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003e0\u003c/span\u003e\u003cspan class=\"o\"\u003e];\u003c/span\u003e\n        \u003cspan class=\"k\"\u003efor\u003c/span\u003e \u003cspan class=\"o\"\u003e(\u003c/span\u003e\u003cspan class=\"kt\"\u003eint\u003c/span\u003e \u003cspan class=\"n\"\u003ei\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003e1\u003c/span\u003e\u003cspan class=\"o\"\u003e;\u003c/span\u003e \u003cspan class=\"n\"\u003ei\u003c/span\u003e \u003cspan class=\"o\"\u003e\u0026lt;\u003c/span\u003e \u003cspan class=\"n\"\u003erow\u003c/span\u003e\u003cspan class=\"o\"\u003e;\u003c/span\u003e \u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"o\"\u003e++)\u003c/span\u003e \u003cspan class=\"o\"\u003e{\u003c/span\u003e\n            \u003cspan class=\"k\"\u003efor\u003c/span\u003e \u003cspan class=\"o\"\u003e(\u003c/span\u003e\u003cspan class=\"kt\"\u003eint\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003e1\u003c/span\u003e\u003cspan class=\"o\"\u003e;\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e \u003cspan class=\"o\"\u003e\u0026lt;\u003c/span\u003e \u003cspan class=\"n\"\u003ecol\u003c/span\u003e\u003cspan class=\"o\"\u003e;\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"o\"\u003e++)\u003c/span\u003e \u003cspan class=\"o\"\u003e{\u003c/span\u003e\n                \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"o\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"n\"\u003eMath\u003c/span\u003e\u003cspan class=\"o\"\u003e.\u003c/span\u003e\u003cspan class=\"na\"\u003emin\u003c/span\u003e\u003cspan class=\"o\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e \u003cspan class=\"o\"\u003e-\u003c/span\u003e \u003cspan class=\"n\"\u003e1\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"o\"\u003e],\u003c/span\u003e \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e \u003cspan class=\"o\"\u003e-\u003c/span\u003e \u003cspan class=\"n\"\u003e1\u003c/span\u003e\u003cspan class=\"o\"\u003e])\u003c/span\u003e \u003cspan class=\"o\"\u003e+\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"o\"\u003e];\u003c/span\u003e\n            \u003cspan class=\"o\"\u003e}\u003c/span\u003e\n        \u003cspan class=\"o\"\u003e}\u003c/span\u003e\n        \u003cspan class=\"k\"\u003ereturn\u003c/span\u003e \u003cspan class=\"n\"\u003edp\u003c/span\u003e\u003cspan class=\"o\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003erow\u003c/span\u003e \u003cspan class=\"o\"\u003e-\u003c/span\u003e \u003cspan class=\"n\"\u003e1\u003c/span\u003e\u003cspan class=\"o\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ecol\u003c/span\u003e \u003cspan class=\"o\"\u003e-\u003c/span\u003e \u003cspan class=\"n\"\u003e1\u003c/span\u003e\u003cspan class=\"o\"\u003e];\u003c/span\u003e\n    \u003cspan class=\"o\"\u003e}\u003c/span\u003e\n\u003cspan class=\"o\"\u003e}\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003e自顶向下\u003c/p\u003e\u003cdiv class=\"highlight\"\u003e\u003cpre\u003e\u003ccode class=\"language-python\"\u003e\u003cspan class=\"k\"\u003eclass\u003c/span\u003e \u003cspan class=\"nc\"\u003eSolution\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\n    \u003cspan class=\"k\"\u003edef\u003c/span\u003e \u003cspan class=\"nf\"\u003eminPathSum\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"bp\"\u003eself\u003c/span\u003e\u003cspan class=\"p\"\u003e,\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e \u003cspan class=\"n\"\u003eList\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003eList\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"nb\"\u003eint\u003c/span\u003e\u003cspan class=\"p\"\u003e]])\u003c/span\u003e \u003cspan class=\"o\"\u003e-\u0026gt;\u003c/span\u003e \u003cspan class=\"nb\"\u003eint\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\n        \u003cspan class=\"kn\"\u003eimport\u003c/span\u003e \u003cspan class=\"nn\"\u003efunctools\u003c/span\u003e\n        \u003cspan class=\"k\"\u003eif\u003c/span\u003e \u003cspan class=\"ow\"\u003enot\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e \u003cspan class=\"k\"\u003ereturn\u003c/span\u003e \u003cspan class=\"mi\"\u003e0\u003c/span\u003e\n        \u003cspan class=\"n\"\u003erow\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"nb\"\u003elen\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e)\u003c/span\u003e\n        \u003cspan class=\"n\"\u003ecol\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"nb\"\u003elen\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e])\u003c/span\u003e\n        \u003cspan class=\"nd\"\u003e@functools.lru_cache\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"bp\"\u003eNone\u003c/span\u003e\u003cspan class=\"p\"\u003e)\u003c/span\u003e\n        \u003cspan class=\"k\"\u003edef\u003c/span\u003e \u003cspan class=\"nf\"\u003ehelper\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"p\"\u003e,\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"p\"\u003e):\u003c/span\u003e\n            \u003cspan class=\"k\"\u003eif\u003c/span\u003e \u003cspan class=\"n\"\u003ei\u003c/span\u003e \u003cspan class=\"o\"\u003e==\u003c/span\u003e \u003cspan class=\"n\"\u003erow\u003c/span\u003e \u003cspan class=\"o\"\u003e-\u003c/span\u003e \u003cspan class=\"mi\"\u003e1\u003c/span\u003e \u003cspan class=\"ow\"\u003eand\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e \u003cspan class=\"o\"\u003e==\u003c/span\u003e \u003cspan class=\"n\"\u003ecol\u003c/span\u003e \u003cspan class=\"o\"\u003e-\u003c/span\u003e \u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\n                \u003cspan class=\"k\"\u003ereturn\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e\n            \u003cspan class=\"k\"\u003eif\u003c/span\u003e \u003cspan class=\"n\"\u003ei\u003c/span\u003e \u003cspan class=\"o\"\u003e\u0026gt;=\u003c/span\u003e \u003cspan class=\"n\"\u003erow\u003c/span\u003e \u003cspan class=\"ow\"\u003eor\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e \u003cspan class=\"o\"\u003e\u0026gt;=\u003c/span\u003e \u003cspan class=\"n\"\u003ecol\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\n                \u003cspan class=\"k\"\u003ereturn\u003c/span\u003e \u003cspan class=\"nb\"\u003efloat\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"s2\"\u003e\u0026#34;inf\u0026#34;\u003c/span\u003e\u003cspan class=\"p\"\u003e)\u003c/span\u003e\n            \u003cspan class=\"n\"\u003etmp\u003c/span\u003e \u003cspan class=\"o\"\u003e=\u003c/span\u003e \u003cspan class=\"mi\"\u003e0\u003c/span\u003e\n            \u003cspan class=\"n\"\u003etmp\u003c/span\u003e \u003cspan class=\"o\"\u003e+=\u003c/span\u003e \u003cspan class=\"n\"\u003egrid\u003c/span\u003e\u003cspan class=\"p\"\u003e[\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"p\"\u003e][\u003c/span\u003e\u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"p\"\u003e]\u003c/span\u003e \u003cspan class=\"o\"\u003e+\u003c/span\u003e \u003cspan class=\"nb\"\u003emin\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003ehelper\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"p\"\u003e,\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"o\"\u003e+\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e),\u003c/span\u003e \u003cspan class=\"n\"\u003ehelper\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"n\"\u003ei\u003c/span\u003e\u003cspan class=\"o\"\u003e+\u003c/span\u003e\u003cspan class=\"mi\"\u003e1\u003c/span\u003e\u003cspan class=\"p\"\u003e,\u003c/span\u003e \u003cspan class=\"n\"\u003ej\u003c/span\u003e\u003cspan class=\"p\"\u003e))\u003c/span\u003e\n            \u003cspan class=\"k\"\u003ereturn\u003c/span\u003e \u003cspan class=\"n\"\u003etmp\u003c/span\u003e\n        \u003cspan class=\"k\"\u003ereturn\u003c/span\u003e \u003cspan class=\"n\"\u003ehelper\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e,\u003c/span\u003e \u003cspan class=\"mi\"\u003e0\u003c/span\u003e\u003cspan class=\"p\"\u003e)\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cfigure data-size=\"normal\"\u003e\u003cnoscript\u003e\u003cimg src=\"https://pic3.zhimg.com/v2-dc7c566bc2770d8ee6873a1e87b1a022_b.jpg\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"640\" data-rawheight=\"640\" class=\"origin_image zh-lightbox-thumb\" width=\"640\" data-original=\"https://pic3.zhimg.com/v2-dc7c566bc2770d8ee6873a1e87b1a022_r.jpg\"/\u003e\u003c/noscript\u003e\u003cimg src=\"data:image/svg+xml;utf8,\u0026lt;svg xmlns=\u0026#39;http://www.w3.org/2000/svg\u0026#39; width=\u0026#39;640\u0026#39; height=\u0026#39;640\u0026#39;\u0026gt;\u0026lt;/svg\u0026gt;\" data-caption=\"\" data-size=\"normal\" data-rawwidth=\"640\" data-rawheight=\"640\" class=\"origin_image zh-lightbox-thumb lazy\" width=\"640\" data-original=\"https://pic3.zhimg.com/v2-dc7c566bc2770d8ee6873a1e87b1a022_r.jpg\" data-actualsrc=\"https://pic3.zhimg.com/v2-dc7c566bc2770d8ee6873a1e87b1a022_b.jpg\"/\u003e\u003c/figure\u003e\u003chr/\u003e\u003cp\u003e同步更新博客:\u003c/p\u003e\u003ca href=\"https://link.zhihu.com/?target=https%3A//www.cnblogs.com/powercai/p/10690649.html\" data-draft-node=\"block\" data-draft-type=\"link-card\" class=\" wrap external\" target=\"_blank\" rel=\"nofollow noreferrer\"\u003e一起刷LeetCode - 威行天下 - 博客园\u003c/a\u003e\u003cp\u003e\u003c/p\u003e",
+  "admin_closed_comment": false,
+  "topics": [
+    {
+      "url": "https://api.zhihu.com/topics/19553510",
+      "type": "topic",
+      "id": "19553510",
+      "name": "算法"
+    },
+    {
+      "url": "https://api.zhihu.com/topics/19625716",
+      "type": "topic",
+      "id": "19625716",
+      "name": "算法与数据结构"
+    },
+    {
+      "url": "https://api.zhihu.com/topics/19925162",
+      "type": "topic",
+      "id": "19925162",
+      "name": "力扣（LeetCode）"
+    }
+  ],
+  "voteup_count": 0,
+  "voting": 0,
+  "column": {
+    "description": "",
+    "can_manage": false,
+    "intro": "leetCode刷题专用",
+    "is_following": true,
+    "url_token": "c_1047791597869199360",
+    "id": "c_1047791597869199360",
+    "articles_count": 150,
+    "accept_submission": true,
+    "title": "leetCode刷题",
+    "url": "https://api.zhihu.com/columns/c_1047791597869199360",
+    "comment_permission": "all",
+    "created": 1542592983,
+    "updated": 1543024094,
+    "image_url": "https://pic3.zhimg.com/v2-c7674f4bf03390679025f97092eb5e94_b.jpg",
+    "author": {
+      "is_followed": false,
+      "avatar_url_template": "https://pic3.zhimg.com/v2-22966db903d9f808e8f2e8042b6c619b_{size}.jpg",
+      "uid": "869614084004384768",
+      "user_type": "people",
+      "is_following": false,
+      "url_token": "cai-wei-30-64",
+      "id": "745cade48f041cfa5d8305af414cec4e",
+      "description": "世界未亡 死不投降",
+      "name": "九四干",
+      "is_advertiser": false,
+      "headline": "计算机",
+      "gender": 1,
+      "url": "https://api.zhihu.com/people/745cade48f041cfa5d8305af414cec4e",
+      "avatar_url": "https://pic3.zhimg.com/v2-22966db903d9f808e8f2e8042b6c619b_l.jpg",
+      "is_org": false,
+      "type": "people"
+    },
+    "followers": 619,
+    "type": "column"
+  },
+  "comment_count": 0,
+  "contributions": [
+    {
+      "id": 20920783,
+      "state": "accepted",
+      "type": "first_publish",
+      "column": {
+        "description": "",
+        "can_manage": false,
+        "intro": "leetCode刷题专用",
+        "is_following": true,
+        "url_token": "c_1047791597869199360",
+        "id": "c_1047791597869199360",
+        "articles_count": 150,
+        "accept_submission": true,
+        "title": "leetCode刷题",
+        "url": "https://api.zhihu.com/columns/c_1047791597869199360",
+        "comment_permission": "all",
+        "created": 1542592983,
+        "updated": 1543024094,
+        "image_url": "https://pic3.zhimg.com/v2-c7674f4bf03390679025f97092eb5e94_b.jpg",
+        "author": {
+          "is_followed": false,
+          "avatar_url_template": "https://pic3.zhimg.com/v2-22966db903d9f808e8f2e8042b6c619b_{size}.jpg",
+          "uid": "869614084004384768",
+          "user_type": "people",
+          "is_following": false,
+          "url_token": "cai-wei-30-64",
+          "id": "745cade48f041cfa5d8305af414cec4e",
+          "description": "世界未亡 死不投降",
+          "name": "九四干",
+          "is_advertiser": false,
+          "headline": "计算机",
+          "gender": 1,
+          "url": "https://api.zhihu.com/people/745cade48f041cfa5d8305af414cec4e",
+          "avatar_url": "https://pic3.zhimg.com/v2-22966db903d9f808e8f2e8042b6c619b_l.jpg",
+          "is_org": false,
+          "type": "people"
+        },
+        "followers": 619,
+        "type": "column"
+      }
+    }
+  ],
+  "is_title_image_full_screen": false,
+  "upvoted_followees": [],
+  "commercial_info": {
+    "is_commercial": false,
+    "plugin": {}
+  },
+  "suggest_edit": {
+    "status": false,
+    "reason": "",
+    "tip": "",
+    "url": "",
+    "title": ""
+  },
+  "reason": "",
+  "annotation_action": [],
+  "can_tip": false,
+  "tipjarors_count": 0,
+  "is_labeled": false,
+  "has_publishing_draft": false,
+  "is_favorited": false,
+  "is_normal": true,
+  "status": 0,
+  "share_text": "[LeetCode] 64. 最小路径和 - 来自知乎专栏「leetCode刷题」，作者: 九四干 https://zhuanlan.zhihu.com/p/66900790 （想看更多？下载 @知乎 App：http://weibo.com/p/100404711598 ）",
+  "can_comment": {
+    "status": true,
+    "reason": ""
+  },
+  "linkbox": {
+    "url": "",
+    "category": "",
+    "pic": "",
+    "title": ""
+  }
+}

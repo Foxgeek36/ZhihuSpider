@@ -1,0 +1,27 @@
+{
+  "description": "你为什么这么短？",
+  "creator": {
+    "is_followed": false,
+    "badge": [],
+    "name": "彭番茄",
+    "url": "https:\/\/api.zhihu.com\/people\/f4a4bfa693247f82d446b26443336a86",
+    "gender": 1,
+    "user_type": "people",
+    "headline": "收藏答案点感谢是知乎礼仪",
+    "avatar_url": "http:\/\/pic4.zhimg.com\/50\/v2-242ba1e42ab840ef13e1c60d29414bd2_s.jpg",
+    "is_following": false,
+    "type": "people",
+    "id": "f4a4bfa693247f82d446b26443336a86"
+  },
+  "url": "https:\/\/api.zhihu.com\/collections\/26489045",
+  "title": "短短短短短短短短短短短短",
+  "answer_count": 2899,
+  "item_count": 2899,
+  "created_time": 1379298740,
+  "comment_count": 54,
+  "follower_count": 40728,
+  "is_public": true,
+  "updated_time": 1552524591,
+  "type": "collection",
+  "id": 26489045
+}

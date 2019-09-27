@@ -1,0 +1,69 @@
+```
+        br: 1280921
+         p: 1118840
+       img: 358714
+  noscript: 178582
+         b: 138020
+    figure: 112799
+      span: 28504
+         a: 21134
+        li: 17024
+         i: 7815
+        h2: 4997
+blockquote: 3304
+        hr: 3293
+figcaption: 3062
+         u: 2449
+        ul: 1870
+    strong: 1639
+        ol: 778
+        h3: 302
+        h1: 276
+      code: 174
+       pre: 152
+       div: 84
+        em: 40
+        h4: 28
+```
+# 一级标签
+
+- Paragraph(p div)
+- Quote(blockquote)
+- Table(ul ol)
+- Code(pre code span)
+- Figure(a img)
+- Link(a)
+- Lideo(a)
+- Math(img)
+
+# 二级标签
+
+- Style(em strong b i u hx li)
+
+# 三级标签
+
+- TransferredMeaning(br hr)
+
+
+# 层析标签
+- 这种模式是线性解析，没有 child 节点
+`Multilevel`
+- 层析标签没有什么特别的样式，都需要向下解析
+- 层析标签需要有层析功能，创建基类（继承于直析标签基类），统一接口
+- 构建解析引擎
+
+- Style(em strong b i u hx li )
+- Paragraph(p div span)
+- Quote(blockquote)
+- Table(ul ol)
+
+# 直析标签
+`Simple`
+
+直析标签不需要层析功能，从标签中抓取到重要信息就可以了
+- Code(pre code span)
+- Figure(a img)
+- Link(a)
+- Video(a)
+- Math(img)
+- String(br hr NavigableString)

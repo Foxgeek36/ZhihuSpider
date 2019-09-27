@@ -1,0 +1,24 @@
+{
+    "unanswered_count": 23764,
+    "best_answerers_count": 2154,
+    "is_black": false,
+    "excerpt": "大数据（big data），指无法在一定时间范围内用常规软件工具进行捕捉、管理和处理的数据集合，是需要新处理模式才能具有更强的决策力、洞察发现力和流程优化能力的海量、高增长率和多样化的信息资产。在维克托·迈尔-舍恩伯格及肯尼斯·库克耶编写的《大数据时代》中大数据指不用随机分析法（抽样调查）这样捷径，而采用所有数据进行分析处理。大数据的5V特点（IBM提出）：Volume（大量）、Velocity（高速）、Variety（多样）、V…",
+    "is_vote": false,
+    "meta": {
+        "category": "n_wiki",
+        "id_str": "1023612789528489984",
+        "id": 1023612789528489984,
+        "name": "大数据"
+    },
+    "id": "19740929",
+    "questions_count": 23764,
+    "category": "n_wiki",
+    "name": "大数据",
+    "introduction": "大数据（big data），指无法在一定时间范围内用常规软件工具进行捕捉、管理和处理的数据集合，是需要新处理模式才能具有更强的决策力、洞察发现力和流程优化能力的海量、高增长率和多样化的信息资产。在维克托·迈尔-舍恩伯格及肯尼斯·库克耶编写的《大数据时代》中大数据指不用随机分析法（抽样调查）这样捷径，而采用所有数据进行分析处理。大数据的5V特点（IBM提出）：Volume（大量）、Velocity（高速）、Variety（多样）、Value（低价值密度）、Veracity（真实性）。",
+    "father_count": 2,
+    "url": "https://www.zhihu.com/api/v4/topics/19740929",
+    "followers_count": 1589792,
+    "avatar_url": "https://pic4.zhimg.com/50/9ebd98cf7_qhd.jpg",
+    "best_answers_count": 999,
+    "type": "topic"
+}
